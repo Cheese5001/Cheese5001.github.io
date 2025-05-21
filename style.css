@@ -110,7 +110,7 @@ body {
     flex-wrap:wrap;
     justify-content:space-evenly; 
   }
-  
+
   .news {
     width: 350px; 
     flex-shrink: 0;
@@ -134,8 +134,13 @@ body {
     padding:10%;
   }
   .team {
-    width: 100%;
+    width: 40%;
+    margin: 5%;
+  }
 
+  #team-img {
+    width: 80%;
+    height: autox;
   }
 
 /* news page*/
