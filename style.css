@@ -1,6 +1,7 @@
 
 body {
-    background: linear-gradient(to top,#AE5BA9, #a828a0);
+  background-color: #2CA58D;
+  color: #F9CB40;
     font-family: "Antonio", sans-serif;
     /*font-family: "Kablammo", system-ui;*/
     margin:0;
@@ -9,7 +10,7 @@ body {
   .banner-title {
     color:#F9CB40;
     font-size: 400%;
-    text-shadow: 0 0 30px #AE5BA9;
+    text-shadow: 0 0 20px #F9CB40;
     text-align: left;
   }
   
@@ -19,7 +20,7 @@ body {
   }
   
   .banner {
-    background-color:#d62828;
+    background-color:#C40C0C;
     display:flex;
     justify-content: space-around;
     margin-bottom: 2%;
@@ -52,7 +53,7 @@ body {
   }
 
   .page-title {
-    color:#000000;
+    color:#F9CB40;
     text-shadow: 0 0 30px red;
     text-align: center;
     width: 100%;
@@ -123,7 +124,7 @@ body {
   }
   .card {
     text-align: center;
-    background-color:#F9CB40;
+    background-color:#C40C0C;
     box-shadow: 0 0 30px #F9CB40;
     border-radius: 3px;
   }
@@ -161,11 +162,11 @@ body {
   }
   
   ::-webkit-scrollbar-thumb:hover {
-    background-color: #cfa31e;
+    background-color: #fcd972;
   }
   
   ::-webkit-scrollbar-track {
-    background-color: #7e417a;
+    background-color: #45c4aa;
     border-radius: 6px;
   }
 
@@ -182,14 +183,14 @@ body {
   padding: 10px;
   background-color: #F9CB40;
   font-size: 16px;
-  border: 2px solid #cfa31e;
+  border: 2px solid #fcd972;
   border-radius: 5px;
 }
 
 .search-button {
   padding: 10px 15px;
   margin-left: 10px;
-  background-color: #AE5BA9;
+  background-color: #2CA58D;
   color: white;
   border: none;
   border-radius: 5px;
@@ -197,11 +198,24 @@ body {
 }
 
 .search-button:hover {
-  background-color: #7e417a;
+  background-color: #45c4aa;
   cursor: pointer;
 }
 
 .highlight {
   box-shadow: 0 0 20px 5px #d62828;
   transition: outline 0.3s ease-in-out;
+}
+
+.spaceing {
+  margin: 8%;
+}
+
+.footer {
+  height: auto;
+  background-color: #C40C0C;
+  color: #cfa31e;
+  text-align: center;
+  padding-bottom: .5%;
+  padding-top: .5%;
 }
