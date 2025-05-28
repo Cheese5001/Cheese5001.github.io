@@ -9,13 +9,13 @@ body {
   
   .banner-title {
     color:#F9CB40;
-    font-size: 400%;
+    font-size: 5vw;
     text-shadow: 0 0 20px #F9CB40;
     text-align: left;
   }
   
   .banner-logo {
-    max-height: 150px;
+    max-height: 15vw;
     height:auto;
   }
   
@@ -41,7 +41,8 @@ body {
   
   .page-link {
     margin: 10px;
-    color:white ;
+    color: #F9CB40;
+    font-size: 110%;
     text-decoration: none;
   }
   
@@ -79,7 +80,7 @@ body {
 
   .overlay-text {
     position: absolute; 
-    font-size: 1000%;
+    font-size: 11.7vw;
     color: #F9CB40;
     text-shadow: #d62828 0px 0px 30px;
   }
