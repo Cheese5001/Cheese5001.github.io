@@ -10,7 +10,6 @@ body {
   .banner-title {
     color:#F9CB40;
     font-size: 5vw;
-    text-shadow: 0 0 20px #F9CB40;
     text-align: left;
   }
   
@@ -31,42 +30,36 @@ body {
     list-style: none;
   }
   
-  .page-link:hover {
-    text-shadow: 0 0 10px #F9CB40;
-    /* text-decoration: underline; 
-    text-decoration-thickness: 2px; 
-    text-decoration-color: #AE5BA9 ;
-  */
-  }
-  
   .page-link {
     margin: 10px;
     color: #F9CB40;
     font-size: 110%;
     text-decoration: none;
   }
+    .page-link:hover {
+    text-shadow: 0 0 10px #F9CB40;
+  }
   
-  .active {
+  .active {/* for when on that page*/
     text-shadow: 0 0 10px #F9CB40;
     text-decoration: underline; 
     text-decoration-thickness: 2px; 
     text-decoration-color: #F9CB40 ;
   }
 
+/*Pages*/
+
   .page-title {
     color:#F9CB40;
     text-shadow: 0 0 30px red;
-    text-align: center;
+    text-align: left;
     width: 100%;
   }
-
+/*
   .subtitle {
     font-size: 100%;
   }
-
-/* pages*/
-
-
+*/
   #main-img {
     width:70%;
     display:block;
@@ -105,7 +98,6 @@ body {
   .caption { /* underneath some imgs*/
     font-size: 15px;
     text-align: center;
-
   }
 
   .members-cards {
@@ -137,14 +129,13 @@ body {
     margin:auto;
     padding:10%;
   }
-  .team {
+  .team{
     width: 40%;
     margin: 5%;
   }
 
   #team-img {
     width: 80%;
- 
   }
 
 /* news page*/
@@ -204,7 +195,13 @@ body {
   cursor: pointer;
   }
 
-.spaceing {
+
+.highlight /* highlight search results */{
+  box-shadow: 0 0 20px 5px #d62828;
+  transition: outline 0.3s ease-in-out;
+}
+
+.spaceing /* spacing for the footer */{
   margin: 8%;
 }
 
