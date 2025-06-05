@@ -16,3 +16,9 @@ function searchPage() {
     }
     alert("No matches found!");
   }
+
+function scrollNews(direction) {
+  const container = document.getElementById('newsCards');
+  const scrollAmount = 350; // Adjust to match your card width
+  container.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+}

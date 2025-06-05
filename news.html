@@ -1,13 +1,15 @@
-<html>
+<html> 
   <head>
     
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Kablammo&display=swap" rel="stylesheet">
-    <title> OHS ROBOTICS </title>
+    <title> News </title>
     
-    
+    <!-- Page description for search engines -->
+    <meta name="description" content="OHS Robotics, symbiOHSis, Onehunga High school, VEX V5, Auckland, Poopybumbum123478, rats ">
     
   </head>
+ 
   
   <body>
 
@@ -34,24 +36,27 @@
     
    <h1 class="page-title"> News </h1> 
    <h2 class="page-title subtitle"> Today <!-- adding todays date would be cool--> we probly did nothing, but this stuff happened in the past, i think it is quite interesting   </h2> 
- 
-    <div class= 'news-cards'> 
+
+
+<div class="news-cards-wrapper">
+  <button onclick="scrollNews(-1)" class="scroll-btn left-btn">«</button>
+  <div class="news-cards" id="newsCards">
       
       <div class='news card'> 
         <h1>Nathan thinks he is cool</h1>
-        <img class='card-img' src='newt.png' alt='team pic'/>
+        <img class='card-img' src='newt.png' alt='news pic'/>
         <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat nihil possimus unde harum aliquam nobis quia </p>
       </div>
       <div class='news card'>
         <h2 class="date subtitle">21st night of september</h2> 
         <h1>We flew a kite in public place</h1>
-        <img class='card-img' src='newt.png' alt='team pic'/>
+        <img class='card-img' src='newt.png' alt='news pic'/>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eligendi cumque a perspiciatis eaque debitis voluptatibus doloremque nemo laboriosam nesciunt deserunt ut possimus quae, aliquid eius voluptate sed eos cupiditate.</p>
       </div>
       <div class='news card'> 
         <h2 class="date subtitle">21st night of September</h2>
         <h1>We all live in a yellow submairne</h1>
-        <img class='card-img' src='newt.png' alt='team pic'/>
+        <img class='card-img' src='newt.png' alt='a pic of a newt'/>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid maxime ab quos ullam, aspernatur, illum ut natus ex vero alias nobis debitis officiis at cumque, facilis repellat dolor rerum? Animi?</p>
       </div>
       <div class='news card'>
@@ -85,16 +90,18 @@
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente atque quasi quisquam itaque distinctio tenetur animi nam vel fugit sunt odio, maiores quae asperiores consectetur ipsam dignissimos perspiciatis suscipit? Commodi?</p>
       </div>
       
-    </div>  
-    
-    <div class="spaceing"> </div> <!-- empty div to space out things -->
+    </div> 
+  <button onclick="scrollNews(1)" class="scroll-btn right-btn">»</button>
+</div>
+
+    <div class="spaceing"> </div> <!-- empty div to space out the footer -->
 
     <script src="script.js"></script>
   </body>
 
   <footer class="footer">
     <p>Any errors are Baker's fault</p>
-    <p>© 2025 OHS Robotics ⠀All rights reserved.</p>
+    <p>© 2025 OHS Robotics | All rights reserved.</p>
   </footer>
 
 </html>
