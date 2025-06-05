@@ -52,14 +52,15 @@ body {
   .page-title {
     color:#F9CB40;
     text-shadow: 0 0 30px red;
-    text-align: left;
+    text-align: center;
     width: 100%;
   }
-/*
+
   .subtitle {
     font-size: 100%;
+    text-align: center;
   }
-*/
+
   #main-img {
     width:70%;
     display:block;
