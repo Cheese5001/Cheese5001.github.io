@@ -169,15 +169,21 @@ body {
   padding: 0;
 }
 
-.left-btn {
+#leftbtn {
   left: 0;
 }
 
-.right-btn {
+#rightbtn {
   right: 0;
 }
 .scroll-btn:hover {
-  background: #ffd700;
+  background: #ffd700;  
+}
+
+.scroll-btn:disabled {
+  cursor: not-allowed;
+  background: #ccc;
+  color: #888;
 }
   .news-cards::-webkit-scrollbar{
     height: 8px;
@@ -186,10 +192,12 @@ body {
   ::-webkit-scrollbar-thumb {
     background-color: #F9CB40;
     border-radius: 6px;
+    
   }
   
   ::-webkit-scrollbar-thumb:hover {
     background-color: #fcd972;
+    cursor: pointer;
   }
   
   ::-webkit-scrollbar-track {

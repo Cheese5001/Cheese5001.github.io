@@ -1,6 +1,3 @@
-
-
-
 function searchPage() {
     const query = document.getElementById("searchBar").value.toLowerCase();
     const elements = document.querySelectorAll("h1, h4, p, date, subtitle ");
@@ -22,3 +19,31 @@ function scrollNews(direction) {
   const scrollAmount = 350; // Adjust to match your card width
   container.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
 }
+
+// Hide buttons if unavailable
+function updateScrollButtons() {
+  const container = document.getElementById('newsCards');
+  const leftBtn = document.getElementById('leftBtn');
+  const rightBtn = document.getElementById('rightBtn');
+
+
+  if (container.scrollLeft <= 0) {
+    leftBtn.style.opacity = "0.3";
+    leftBtn.disabled = true;
+  } else {
+    leftBtn.style.opacity = "1";
+    leftBtn.disabled = false;
+  }
+  
+  if (container.scrollLeft + container.clientWidth >= container.scrollWidth - 1) {
+    rightBtn.style.opacity = "0.3"; 
+    rightBtn.disabled = true;
+  } else {
+    rightBtn.style.opacity = "1";
+    rightBtn.disabled = false;
+  }
+}
+
+// Call this on scroll and after scrolling with buttons
+document.getElementById('newsCards').addEventListener('scroll', updateScrollButtons);
+window.addEventListener('DOMContentLoaded', updateScrollButtons);
