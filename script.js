@@ -1,13 +1,15 @@
 function hideCookiePopup() {
   document.getElementById('cookie-popup').classList.add('hide');
+  document.getElementById('cookie-overlay').classList.add('hide');
   localStorage.setItem('cookiePopupHidden', 'true');
 
 }
 
-// On page load, check if cookies were accepted
+// On page load, check if the cookie popup should be hidden
 window.addEventListener('DOMContentLoaded', function() {
   if(localStorage.getItem('cookiePopupHidden') === 'true') {
     document.getElementById('cookie-popup').classList.add('hide');
+    document.getElementById('cookie-overlay').classList.add('hide');
   }
 });
 

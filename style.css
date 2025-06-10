@@ -47,6 +47,7 @@ body {
   }
 
 #cookie-popup {
+
   position: fixed;
   top: 50%;
   left: 50%;
@@ -63,6 +64,20 @@ body {
 }
 
 #cookie-popup.hide {
+  display: none;
+}
+
+#cookie-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(80,80,80,0.6); /* grey and translucent */
+  z-index: 999999998; /* just below the popup */
+  display: block;
+}
+
+#cookie-overlay.hide {
   display: none;
 }
 
