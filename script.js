@@ -1,3 +1,7 @@
+function hideCookiePopup() {
+  document.getElementById('cookie-popup').classList.add('hide');
+}
+
 function searchPage() {
     const query = document.getElementById("searchBar").value.toLowerCase();
     const elements = document.querySelectorAll("h1, h4, p, date, subtitle ");
