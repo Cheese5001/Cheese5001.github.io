@@ -1,6 +1,16 @@
 function hideCookiePopup() {
   document.getElementById('cookie-popup').classList.add('hide');
+  localStorage.setItem('cookiePopupHidden', 'true');
+
 }
+
+// On page load, check if cookies were accepted
+window.addEventListener('DOMContentLoaded', function() {
+  if(localStorage.getItem('cookiePopupHidden') === 'true') {
+    document.getElementById('cookie-popup').classList.add('hide');
+  }
+});
+
 
 function searchPage() {
     const query = document.getElementById("searchBar").value.toLowerCase();
